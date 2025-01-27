@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ### 4⃣ Настройте ключи API:
 
 - Откройте файл `main.py`.
-- Замените значения переменных `DEEPGRAM_API_KEY` и `HYPERBOLIC_API_KEY` на ваши ключи API.
+- Замените значения переменных `DEEPGRAM_API_KEY` и `api_key` (openAI) на ваши ключи API.
 
 ---
 
