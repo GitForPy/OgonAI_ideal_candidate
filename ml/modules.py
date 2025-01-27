@@ -92,23 +92,6 @@ def check_key_existence(input_dict):
         return 'people'
 
 
-
-
-# def calculate_metric(input_quantity_dict, numerator_column):
-#     """
-#     Вспомогательная функция для расчёта метрики:
-#     метрика = (значение по ключу numerator_column) / (сумма значений всех ключей)
-#     """
-#     denominator = 0
-#     for key, item in input_quantity_dict.items():
-#         denominator += item
-#     if denominator == 0:
-#         return 0
-#     else:
-#         return input_quantity_dict[numerator_column] / denominator
-
-
-
 def calculate_metric(input_quantity_dict, numerator_column):
     """
     Модифицированная функция для игнорирования нечисловых полей
@@ -224,22 +207,14 @@ class InterviewAnalyzerExtractor:
     """
 
     def __init__(self, api_key):
-        # Инициализация ChatOpenAI (LangChain)
-        # Ниже пример, как подключить модель DeepSeek — замените на нужные параметры при необходимости.
-        # self.llm = ChatOpenAI(
-        #     base_url="https://api.deepseek.com/beta",
-        #     model="deepseek-chat",
-        #     api_key='sk-236a0afa396441909beac5b2695851cd',
-        #     temperature=0,
-        #     streaming=True
-                            # )
+
+
             
         self.llm = ChatOpenAI(
         api_key='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',
         model="gpt-4o-mini",
         temperature=0,
-        streaming=True  # Включить режим стриминга для показа ответа по буквам
-                         )
+        streaming=True )
 
         
     def analyze_criterion(

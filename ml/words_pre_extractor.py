@@ -3,7 +3,7 @@ import numpy as np
 import spacy
 
 
-# python -m spacy download ru_core_news_sm
+# install python -m spacy download ru_core_news_sm
 
 
 interview = """

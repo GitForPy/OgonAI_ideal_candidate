@@ -20,11 +20,8 @@ from pydantic_strusture import (
     extraction_classes
 )
 
-HYPERBOLIC_API_KEY = (
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
-    "eyJzdWIiOiJlcmVtaW52bTIwMDNAZ21haWwuY29tIiwiaWF0IjoxNzM1MDU2Nzg4fQ."
-    "9Wsd40vXxhZmIaz3vY0eZHYq_kpg_qRUgfPTzEJsRHM"
-)
+
+# Сборка общего поплайна
 
 def main():
     """
@@ -64,7 +61,7 @@ def main():
     # Инициализируем анализатор
     analyzer_extractor = InterviewAnalyzerExtractor(HYPERBOLIC_API_KEY)
 
-    # Словари для хранения метрик
+    # Словари для хранения метрик (количественные и качественные метрики)
     quantitative_metrics = {}
     qualitative_metrics = {}
 
