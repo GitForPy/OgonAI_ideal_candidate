@@ -1,0 +1,10 @@
+langchain
+langchain-community
+openai
+pydantic
+spacy
+deepgram
+ffmpeg-python
+pandas
+numpy
+concurrent-log-handler
